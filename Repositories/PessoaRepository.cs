@@ -49,6 +49,7 @@ public class PessoaRepository : IPessoaRepository
         pessoa.Nome = model.Nome;
         pessoa.Salario = model.Salario;
         pessoa.DataNascimento = model.DataNascimento;
+        pessoa.Idade = model.Idade;
 
         _context.Pessoas.Update(pessoa);
         await _context.SaveChangesAsync();
